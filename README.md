@@ -29,7 +29,7 @@ Resolution: Adjust the code within Startup.GetEnvironment.
 
 ### PostgreSQLDatabase throws an OpenDatabaseConnectionException. 
 
-Resolution: Ensure that you have PostgreSQL installed and set up compatible with the connection string given in AgoRapideSample.BaseController.GetDatabase.
+Resolution: Ensure that you have PostgreSQL installed and set up in a manner compatible with the connection string given in AgoRapideSample.BaseController.GetDatabase.
 
 Typically that would mean adding 
 
