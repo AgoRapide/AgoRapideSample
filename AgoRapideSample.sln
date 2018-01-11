@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgoRapide", "..\AgoRapide\AgoRapide\AgoRapide.csproj", "{88536498-44FF-498C-882D-2205CDD1C5A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgoRapideSample", "AgoRapideSample\AgoRapideSample.csproj", "{12536817-6E0A-4886-850F-144893EB1FE1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2A5B98FD-CF0E-4233-9541-CA1188CE1C9F}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88536498-44FF-498C-882D-2205CDD1C5A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88536498-44FF-498C-882D-2205CDD1C5A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88536498-44FF-498C-882D-2205CDD1C5A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88536498-44FF-498C-882D-2205CDD1C5A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12536817-6E0A-4886-850F-144893EB1FE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12536817-6E0A-4886-850F-144893EB1FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12536817-6E0A-4886-850F-144893EB1FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12536817-6E0A-4886-850F-144893EB1FE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
