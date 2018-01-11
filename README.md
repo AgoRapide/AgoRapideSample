@@ -2,12 +2,14 @@
 
 Lightweight small framework for getting started with using AgoRapide. 
 
-NOTE: AgoRapideSample has not been created yet. 
+As of Jan 2018 the AgoRapideSample.sln (solution file) and AgoRapideSample.csproj (project file) references the AgoRapide library through a relative path.
 
-For the time being AgoRapideSample is included in the source code for the AgoRapide-library itself. In order to sample AgoRapide you should therefore clone the AgoRapide repository itself to your computer.
+AgoRapideSample and AgoRapide should therefore be cloned in a parallell directory structure, for instance like:
+c:\git\AgoRapide
+and
+c:\git\AgoRapideSample
 
-TODO: Move AgoRapideSample into a separate repository (this repository) and link to AgoRapide through Nuget. 
-TODO: In other words, create a Nuget package for AgoRapide first.
+TODO: Reference the AgoRapide library as a Nuget package instead of a locally cloned copy of AgoRapide.
 
 # FAQ
 
