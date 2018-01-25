@@ -1,3 +1,6 @@
+"The shape of a program should reflect only the problem it needs to solve" - [Paul Graham - Revenge of the Nerds](http://www.paulgraham.com/icad.html).
+
+
 # AgoRapideSample
 
 Lightweight small framework for getting started with using AgoRapide. 
