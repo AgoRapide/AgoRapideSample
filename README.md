@@ -1,5 +1,7 @@
 "The shape of a program should reflect only the problem it needs to solve" - [Paul Graham - Revenge of the Nerds](http://www.paulgraham.com/icad.html).
 
+Use AgoRapide and this goal comes within your reach!
+
 
 # AgoRapideSample
 
