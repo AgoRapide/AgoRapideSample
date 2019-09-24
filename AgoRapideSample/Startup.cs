@@ -1,4 +1,4 @@
-﻿// Copyright (c) 2016, 2017 Bjørn Erling Fløtten, Trondheim, Norway
+﻿// Copyright (c) 2016, 2017, 2018, 2019 Bjørn Erling Fløtten, Trondheim, Norway
 // MIT licensed. Details at https://github.com/AgoRapide/AgoRapide/blob/master/LICENSE
 using System;
 using System.Linq;
@@ -79,9 +79,15 @@ namespace AgoRapideSample {
                     },
                 });
 
-                /// Include all assemblies in which your controllers and <see cref="AgoRapide.BaseEntity"/>-classes resides.
-                var assemblies = new List<System.Reflection.Assembly> { typeof(HomeController).Assembly };
-                AgoRapide.API.APIMethod.SetEntityTypes(assemblies, new List<Type>()); /// Exclude <see cref="AgoRapide.Person"/> now if you do not want to use that class. 
+                /// Include all assemblies in which your controllers and <see cref="AgoRapide.BaseEntity"/>-derived classes resides.
+                var assemblies = new List<System.Reflection.Assembly> {
+                    typeof(HomeController).Assembly, /// Strictly speaking only needed for call to <see cref="AgoRapide.Core.CoreStartup.Initialize"/>, not <see cref="AgoRapide.API.APIMethod.FindAndSetAllBaseEntityDerivedTypes"/>
+                };
+
+                AgoRapide.API.APIMethod.FindAndSetAllBaseEntityDerivedTypes(
+                    assemblies,
+                    typesToExclude: new List<Type>() /// Exclude <see cref="AgoRapide.Person"/> now if you do not want to use that class in your project.
+                );
 
                 AgoRapide.Core.PropertyKeyMapper.MapKnownEnums(s => Log("MapEnums", nameof(AgoRapide.Core.PropertyKeyMapper.MapKnownEnums) + ": " + s)); /// TODO: Move into <see cref="AgoRapide.Core.Startup"/> somehow
 
